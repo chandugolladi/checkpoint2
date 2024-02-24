@@ -1,0 +1,373 @@
+/*logo size adjusting */
+
+#logoimage
+{
+    width:60px;
+}
+
+
+.navbar-custom {
+    background-color:black; 
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: skyblue; 
+    font-size: 18px;
+    font-family: 'Anton', sans-serif; 
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-color: transparent; 
+    border: 1px solid black; 
+}
+
+
+.navbar-brand {
+    font-family: 'Honk', system-ui;   
+    font-size:35px;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display:block ;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu a:active {
+    background-color: black; 
+    color: skyblue; 
+}
+
+
+
+/* button modification */
+#register-btn,
+#login-btn,
+#booknow-btn {
+    padding: 10px 15px;
+    background-color: skyblue;
+    color: black;
+}
+
+
+#register-btn:hover,
+#login-btn:hover,
+#booknow-btn:hover{
+    background-color: orange;
+}
+
+#hero button{
+    width: 130px;
+    font-size: 20px;
+}
+/* button modification ends*/
+
+
+.jumbotron{
+    background-color: black;
+    border-radius: 0;
+    margin: 0%;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 99%, 49% 99%,0 99%);
+   
+}
+#hero h2 {
+    color: black;
+    font-family: 'Honk', system-ui;
+    font-size: 40px;
+ 
+}
+
+#hero h1 {
+    color: black;
+    font-family: 'Honk', system-ui;
+   
+}
+
+/*image*/
+
+#hero {
+    background-image: url(egypt.jpg);
+    background-size: cover;
+    color: black;
+    padding: 100px;
+    margin-top: 0px;
+    width: 100%;
+    height: 94vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+/*image ends*/
+
+#changetext:after {
+    content: "";  
+    font-size: 50px;
+    animation-name: changetextpr;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changetextpr {
+    0% {
+        content: "Taj Mahal";
+    }
+    30% {
+        content: "Antarctica";
+    }
+    50% {
+        content: "Macchu Picchu";
+    }
+    75% {
+        content: "Giza Pyramids";
+    }
+    100% {
+        content: "Panama Canal";
+    }
+}
+
+
+@media (max-width: 991px) {
+
+}
+@media (max-width: 575px) {
+
+    #logoimage {
+        width: 30px; /* Adjust logo size for smaller screens */
+    }
+
+    .navbar-brand {
+        font-size: 30px; /* Adjust navbar brand font size */
+    }
+
+    #hero h1 {
+        font-size: 30px; /* Adjust hero heading font size */
+    }
+
+    #hero h2 {
+        font-size: 20px; /* Adjust hero subheading font size */
+    }
+
+    #hero button {
+        width: 120px; /* Adjust button width for smaller screens */
+        font-size: 18px; /* Adjust button font size */
+    }
+}
+
+
+/* second part */
+
+#rating {
+    border-top: 2px solid black; /* Adjust the border properties as needed */
+    margin-top: -2px; /* Adjust the margin to align the border properly */
+    padding-top: 20px; /* Optional: Add padding for better spacing */
+}
+
+
+.container-fluid {
+    padding: 10px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.col-md-6 {
+    width: 48%;
+}
+
+.custom-container {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container */
+    margin-right: 9%; /* Adjust the right margin to minimize the right side */
+    
+}
+
+#brandimage {
+    width: 700px;
+    margin-left: -80px; /* Adjust the left margin to move the image to the left */
+}
+
+/* Add more styling as needed */
+
+/* Styling for form fields and button */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+label {
+    font-weight: bold;
+    font-family: 'Honk', system-ui;
+    font-size: 20px;
+}
+
+
+
+#btn-booknow {
+    width: 100%;
+    padding: 10px;
+    background-color: skyblue;
+    color: black
+   
+}
+
+
+#brandimage{
+    width: 550px;
+   
+}   
+
+.bookingform{
+    background-color: black;
+}
+
+
+
+/* Gallery section styles */
+.container {
+    max-width: 1250px;
+  
+}
+
+
+/* Media query for tablets (including iPads) */
+@media (max-width: 991px) {
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form {
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    #brandimage {
+        width: 60%; /* Adjust the image width for better presentation on tablets */
+        max-width: 400px; /* Adjust the maximum width as needed */
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 767px) {
+    /* Adjust styles for screens with a maximum width of 767px (e.g., mobile devices) */
+
+    .col-md-6 {
+        width: 100%; /* Make the form section full width for smaller screens */
+        margin-bottom: 20px; /* Add some spacing between form sections on mobile */
+    }
+
+    form {
+        max-width: 300px; /* Adjust the form width for better mobile presentation */
+        margin: 0 auto; /* Center the form on smaller screens */
+    }
+
+    label {
+        font-size: 16px; /* Adjust label font size for better readability on mobile */
+    }
+
+    #brandimage {
+        width: 100%; /* Make the brand image full width on smaller screens */
+        display: block; /* Ensure the image is a block-level element */
+        margin: 0 auto; /* Center the image within its container */
+    }
+
+    /* Add any additional styles as needed for mobile devices */
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+ 
+}
+
+.card-body {
+    text-align: center;
+}
+
+#btn-book{
+    background-color: skyblue;
+}
+
+#btn-book:hover{
+    background-color: orange;
+}
+
+#p-text{
+    font-family: 'Anton', sans-serif;  
+}
+
+#h5-card{
+    font-family: 'Anton', sans-serif;  
+    font-size: 25px;
+    
+}
+
+
+.card-text .fas {
+    color: gold; /* Set the color to your desired value */
+  
+}
+
+.card-text .far {
+    color: gold;
+     
+}
+
+
+/* Services section styles */
+#services {
+    background-color: white; /* Light gray background for services section */
+    padding: 30px 0;
+    
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    text-align: center;
+}
+
+
+/* Custom color for the heading */
+.heading-color {
+    color: white;
+    font-family: 'Honk', system-ui;
+    font-size: 50px;
+
+}
